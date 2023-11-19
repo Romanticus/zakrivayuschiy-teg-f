@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
@@ -10,10 +11,16 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="icon" href="./images/favicon.ico" sizes="16x16" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-favicon.png" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header page-element">
+      <h1 class="header__title">
+        &lt;/HTML&gt;<span class="header__title_descript">закрывающий тег</span>
+      </h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +47,60 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="page-element page-element_card-wrapper">
+      <article class="card">
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="card__image-wrapper">
+          <span class="card__label">
+            &lt;/HTML&gt;
+          </span>
+          <img class="card__image" src="./images/zero-sprint-img.png" alt="" />
+        </div>
+        <div class="card__content">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+
+          <button class="card__like-button">
+            <div class="like-icon">
+              <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0H3V3H6V0Z" fill="currentColor"/>
+                <path d="M9 0H6V3H9V0Z" fill="currentColor"/>
+                <path d="M3 3H0V6H3V3Z" fill="currentColor"/>
+                <path d="M3 6H0V9H3V6Z" fill="currentColor"/>
+                <path d="M3 9H0V12H3V9Z" fill="currentColor"/>
+                <path d="M12 0H9V3H12V0Z" fill="currentColor"/>
+                <path d="M6 12H3V15H6V12Z" fill="currentColor"/>
+                <path d="M9 15H6V18H9V15Z" fill="currentColor"/>
+                <path d="M12 18H9V21H12V18Z" fill="currentColor"/>
+                <path d="M21 0H24V3H21V0Z" fill="currentColor"/>
+                <path d="M18 0H21V3H18V0Z" fill="currentColor"/>
+                <path d="M24 3H27V6H24V3Z" fill="currentColor"/>
+                <path d="M24 6H27V9H24V6Z" fill="currentColor"/>
+                <path d="M24 9H27V12H24V9Z" fill="currentColor"/>
+                <path d="M15 0H18V3H15V0Z" fill="currentColor"/>
+                <path d="M21 12H24V15H21V12Z" fill="currentColor"/>
+                <path d="M18 15H21V18H18V15Z" fill="currentColor"/>
+                <path d="M15 18H18V21H15V18Z" fill="currentColor"/>
+                <path d="M15 3H12V6H15V3Z" fill="currentColor"/>
+                <path d="M15 21H12V24H15V21Z" fill="currentColor"/>
+              </svg>
+
+
+            </div>
+            <span class="button__text">Like </span>
+          </button>
+        </div>
+      </article>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
