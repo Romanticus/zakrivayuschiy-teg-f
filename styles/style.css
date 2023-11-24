@@ -17,7 +17,7 @@
   var(--back-lin-grad); */
 /* background-size:cover ; */
 
- .page {
+.page {
   padding: 102px 0;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -458,7 +458,7 @@ card__image_where-i-am-style
   background-color: rgb(0 0 0 / 0.75);
 }
 
-@media (width <= 375px) {
+@media (width <= 475px) {
   .page-element {
     inline-size: 100%;
   }
