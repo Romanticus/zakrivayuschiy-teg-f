@@ -42,7 +42,7 @@
   place-items: center;
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
-  font-family: PressStart2P, monospace;
+  font-family: PressStart2P, fantasy, monospace;
   margin-block-end: 100px;
 }
 
@@ -58,12 +58,19 @@
   line-height: normal;
   text-transform: uppercase;
   align-items: center;
+  text-decoration: none;
+}
+
+.header__title:focus-visible {
+  outline: none;
 }
 
 .header__title_descript {
   display: block;
+  font-weight: 400;
   font-size: clamp(0.875rem, 0.6805rem + 0.8411vw, 1.4375rem);
   margin-block-start: 20px;
+  text-transform: uppercase;
 }
 
 .theme-menu {
@@ -162,11 +169,15 @@
   position: relative;
   inline-size: 100%;
   overflow: hidden;
+  display: flex;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card__image {
   width: 101%;
   object-fit: cover;
+  object-position: center;
 }
 /*
 card__image_sad-style
@@ -209,7 +220,7 @@ card__image_where-i-am-style
   z-index: 1;
   position: absolute;
   color: inherit;
-  font-family: PressStart2P;
+  font-family: PressStart2P, fantasy, monospace;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -300,7 +311,7 @@ card__image_where-i-am-style
 
 .button__text {
   /* position: relative; */
-  font-family: PressStart2P, monospace;
+  font-family: PressStart2P, fantasy, monospace;
   font-size: 14px;
   font-weight: 400;
   line-height: 90%;
@@ -320,66 +331,6 @@ card__image_where-i-am-style
   transition: border 0.3s ease;
   max-block-size: 37px;
   cursor: pointer;
-}
-
-.heart {
-  transition: fill 0.1s linear;
-}
-
-.main-body {
-  transition: fill 0.3s;
-}
-
-.card__icon-button:hover .main-body {
-  transition: fill 0.3s 0.05s;
-  --heart-fill-color: var(--accent-color);
-}
-
-.card__icon-button:active .main-body {
-  transition: fill 0.3s 0.05s;
-  --heart-fill-color: var(--liked-fill-color);
-}
-
-.core {
-  transition: fill 0.3s;
-}
-
-.card__icon-button:hover .core {
-  transition: fill 0.3s 0.03s;
-  --heart-fill-color: var(--accent-color);
-}
-
-.card__icon-button:active .core {
-  transition: fill 0.3s 0.03s;
-  --heart-fill-color: var(--liked-fill-color);
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.like-icon.is-liked .core {
-  transition: fill 0.3s 0.03s;
-  --heart-fill-color: var(--liked-fill-color);
-}
-
-.like-icon.is-liked .main-body {
-  transition: fill 0.3s 0.05s;
-  --heart-fill-color: var(--liked-fill-color);
-}
-
-.like-icon.is-liked .contour {
-  transition: fill 0.3s 0.06s;
-  --heart-contour-color: var(--liked-fill-color);
-}
-
-.like-icon.is-liked .heart {
-  transform-origin: center;
-  animation: scale-animation 0.3s ease-in 0.1s 2 alternate;
-}
-
-.like-icon.is-liked .sparks {
-  animation: spark-animation 0.3s ease-in 0.3s 2 alternate;
 }
 
 .card__icon-button:focus {
@@ -426,7 +377,7 @@ card__image_where-i-am-style
 
 .dialog-save_title {
   color: var(--accent-color);
-  font-family: PressStart2P;
+  font-family: PressStart2P, fantasy, monospace;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -436,7 +387,7 @@ card__image_where-i-am-style
 
 .dialog-save__button {
   color: var(--accent-color);
-  font-family: PressStart2P;
+  font-family: PressStart2P, fantasy, monospace;
   font-size: 14px;
   font-weight: 400;
   line-height: 90%;
