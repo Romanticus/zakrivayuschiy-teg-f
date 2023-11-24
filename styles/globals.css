@@ -26,8 +26,11 @@ li {
   padding: 0;
 }
 
-a {
+a,
+a:focus-visible {
   color: inherit;
+  outline: none;
+  text-decoration: none;
 }
 
 button,
