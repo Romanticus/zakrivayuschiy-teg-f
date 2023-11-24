@@ -4,9 +4,12 @@
   --accent-font-family:PressStart2P;
   --main-text-font-weight: 400;
   --title-font-weight: 700;
-
+  --slider-background-color:#fff;
   --background-color: #FFF;
+  --heart-fill-color: transparent;
+  --liked-fill-color:#FF0000 ;
   --accent-color: #000;
+  --heart-contour-color:var(--accent-color);
   --back-lin-grad:  linear-gradient(to bottom, #e7e7e7, #1a1a1a);
   --background-ilg: url(../images/light-background-img.png);
   --bg-img: url(../images/light-bg.png),
