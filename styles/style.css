@@ -201,7 +201,7 @@ card__image_where-i-am-style
 }
 
 .card__image_ufo-style {
-  filter: hue-rotate(0.75turn) invert(100%) saturate(50%);
+  filter: hue-rotate(0.75turn) contrast(150%) invert(100%) saturate(50%);
 }
 
 .card__image_retro-style {
@@ -209,11 +209,11 @@ card__image_where-i-am-style
 }
 
 .card__image_tired-style {
-  filter: blur(20px) grayscale(50%);
+  filter: blur(9px) grayscale(50%);
 }
 
 .card__image_where-i-am-style {
-  filter: contrast(100%) hue-rotate(0.73turn) invert(100%) blur(2px);
+  filter: contrast(100%);
 }
 
 .card__label {
